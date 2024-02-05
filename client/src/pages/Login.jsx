@@ -47,18 +47,11 @@ const Login = () => {
         <FormRow type="email" name="email" />
         <FormRow type="password" name="password" />
         <SubmitBtn />
-        if(!
-        <SubmitBtn /> &&
-        {
-          <button
-            type="submit"
-            className="btn btn-block"
-            onClick={loginDemoUser}
-          >
-            Explore the app
-          </button>
-        }
-        )
+
+        <button type="submit" className="btn btn-block" onClick={loginDemoUser}>
+          Explore the app
+        </button>
+
         <p>
           Not a member yet?
           <Link to="/register" className="member-btn"></Link>
